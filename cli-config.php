@@ -1,3 +1,3 @@
 <?php
-require_once('setup.php');
-return \Doctrine\ORM\Tools\Console\ConsoleRunner::createHelperSet($entityManager);
+require_once('app.php');
+return \Doctrine\ORM\Tools\Console\ConsoleRunner::createHelperSet(App::getEntityManager());

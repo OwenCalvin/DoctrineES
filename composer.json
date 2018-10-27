@@ -1,5 +1,15 @@
 {
     "require": {
         "doctrine/orm": "^2.6"
+    },
+    "autoload": {
+        "classmap": [
+            "app/api/user",
+            "app/api/post",
+            "app/api/hashtag",
+            "app/model",
+            "app",
+            "."
+        ]
     }
 }
