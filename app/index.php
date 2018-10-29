@@ -1,8 +1,11 @@
 <?php
 require_once('../vendor/autoload.php');
 
+// On doit pouvoir passer en paramètre les données nécessaires à l'instanciation d'une entité User, Post et Hashtag
+// Comme dans cet exemple
+
 // Here is an example for persist and flush
-$user = new User('Owen', 'owen.gombas@gmail.com', 'Pass1234');
+$user = new User('John', 'john@users.com', 'x');
 $hashtag = new Hashtag('MyHashtag');
 $post = new Post('My title', 'My text', $user, [$hashtag]);
 

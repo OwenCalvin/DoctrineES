@@ -1,7 +1,7 @@
 <?php
 require_once('../../../vendor/autoload.php');
 
-// Créer une fonctionnalité de mise à jour d'un Hashtag (changer son texte)
+// Créez une fonctionnalité de mise à jour d'un Hashtag (changer son texte)
 // Les données permettant de mettre à jour le hashtag (l'id et texte) sont passées en get ($_GET) (ou PUT, comme vous voulez)
 
 // Remarque: Lors de la création d'une API REST, n'utiliser pas systèmatiquement la méthode GET pour passer des données au serveur
