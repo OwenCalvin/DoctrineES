@@ -13,8 +13,6 @@ We use persist method to tell to the orm that we want to insert a new data to th
 `composer dump-autoload -o`
 
 ## Relations
-In a many-to-many relation, both sides can be the owning side of the relation. However, in a bi-directional many-to-many relation, only one side is allowed to be the owning side.
-
-The "owning side" has to use the inversedBy attribute of the ManyToMany relationship.
-
-The "inverse side" has to use the mappedBy attribute of the ManyToMany relationship.
+In a many-to-many relation, both sides can be the owning side of the relation. However, in a bi-directional many-to-many relation, only one side is allowed to be the owning side.  
+- The "owning side" has to use the inversedBy.  
+- The "inverse side" has to use the mappedBy.
