@@ -22,7 +22,7 @@ class App {
       $dbConnectionParams = [
         'driver' => 'pdo_mysql',
         'user' => 'root',
-        'password' => 'root',
+        'password' => '',
         'dbname' => 'orm'
       ];
       $entitiesPaths = ['app/model'];
