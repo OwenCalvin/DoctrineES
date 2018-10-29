@@ -1,12 +1,8 @@
 <?php
 require_once('../../../vendor/autoload.php');
 
-$idIndex = 'id';
-if (isset($_GET[$idIndex])) {
-  $hashtagToDelete = App::getEntityManager()->getReference('Hashtag', $_GET[$idIndex]);
-  App::getEntityManager()->remove($hashtagToDelete);
-  App::getEntityManager()->flush();
-  echo json_encode(['status' => 'ok']);
-} else {
-  echo json_encode(['error' => 'Id not specified']);
-}
+// Créer une fonctionnalité de suppression de hashtag
+// Les données permettant la suppression du hashtag (l'id) sont passées en get ($_GET) (ou DELETE, comme vous voulez)
+
+// Remarque: Lors de la création d'une API REST, n'utiliser pas systèmatiquement la méthode GET pour passer des données au serveur
+// GET => Récupération de données, POST => Création, PUT => Modification, DELETE => Suppression

@@ -1,14 +1,8 @@
 <?php
 require_once('../../../vendor/autoload.php');
 
-$textIndex = 'text';
-$idIndex = 'id';
-if (isset($_GET[$textIndex]) && isset($_GET[$idIndex])) {
-  $hashtagToUpdate = new Hashtag($_GET[$textIndex]);
-  $hashtagToUpdate->setId($_GET[$idIndex]);
-  App::getEntityManager()->merge($hashtagToUpdate);
-  App::getEntityManager()->flush();
-  echo json_encode(['status' => 'ok']);
-} else {
-  echo json_encode(['error' => 'Text and Id musts to be specified']);
-}
+// Créer une fonctionnalité de mise à jour d'un Hashtag (changer son texte)
+// Les données permettant de mettre à jour le hashtag (l'id et texte) sont passées en get ($_GET) (ou PUT, comme vous voulez)
+
+// Remarque: Lors de la création d'une API REST, n'utiliser pas systèmatiquement la méthode GET pour passer des données au serveur
+// GET => Récupération de données, POST => Création, PUT => Modification, DELETE => Suppression

@@ -1,9 +1,6 @@
 <?php
 require_once('../../../vendor/autoload.php');
 
-echo json_encode(
-  Hashtag::toObjectArray(
-    Hashtag::getRepository()->findAll(),
-    ['text', 'posts']
-  )
-);
+// Recupérez tout les hashtags avec leurs posts et les renvoyer sous format JSON
+// Tips: Utilisez la methode static toObjectArray implémentée dans BaseEntity
+// (Exemple dans post/getAll.php)
