@@ -1,3 +1,10 @@
+# Consignes
+1) Créez vos classes (MPD) à partir du modèle de classe disponible ci-dessous:  
+![MPD](https://i.imgur.com/agNaBA7.png)
+
+2) Créez toutes les fonctionnalités décritent (get, getAll, create, update, delete) dans /app/api/hashtag
+Un exemple est fourni dans /app/api/post/getAll.php pour vous guider
+
 ## Commands  
 To create the schemas:  
 `vendor/bin/doctrine orm:schema-tool:create`  
