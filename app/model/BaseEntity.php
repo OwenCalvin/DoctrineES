@@ -17,12 +17,18 @@ abstract class BaseEntity {
   }
 
   /**
+   * It return the EntityRepository object
    * @return EntityRepository
    */
   public static function getRepository() {
     return App::getEntityManager()->getRepository(get_called_class());
   }
 
+  /**
+   * Convert an array of entities to an array of entities with selected properties
+   * @param Array $arr The array of entities to retrieve
+   * @param Array $props The array of properties to get
+   */
   public static function toObjectArray($arr, $props) {
     if (is_array($arr)) {
       return array_map(function ($item) use($props) {
@@ -32,6 +38,11 @@ abstract class BaseEntity {
     return [];
   }
 
+  /**
+   * Convert an entity instance to an object with selected properties
+   * @param Object $item The entity instance
+   * @param Array $props The array of properties to get
+   */
   public static function toObject($item, $props) {
     if (isset($item)) {
       $obj = [];
