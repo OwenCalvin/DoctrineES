@@ -8,7 +8,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 class Hashtag extends BaseEntity {
  /**
   * @var string
-  * @Column(type="string", name="text", length=20)
+  * @Column(type="string", name="text", length=20, unique=true)
   */
   private $_text;
 
