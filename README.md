@@ -1,6 +1,6 @@
 # Consignes
 1) Créez vos classes (MPD) à partir du modèle de classe disponible ci-dessous:  
-![MPD](https://i.imgur.com/F3Q0ZaE.png)
+![MPD](https://i.imgur.com/k0W07Rt.png)
 
 2) Créez toutes les fonctionnalités décritent (get, getAll, create, update, delete) dans /app/api/hashtag
 Un exemple est fourni dans /app/api/post/getAll.php pour vous guider
