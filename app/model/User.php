@@ -39,9 +39,9 @@ class User extends BaseEntity {
    */
   public function __construct($name, $email, $password) {
     // parent::__construct();
-    $this->_name = $name;
-    $this->_email = $email;
-    $this->_password = $password;
+    $this->setName($name);
+    $this->setEmail($email);
+    $this->setPassword($password);
     $this->_posts = new ArrayCollection();
   }
 

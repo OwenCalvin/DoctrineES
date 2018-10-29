@@ -24,7 +24,7 @@ class Hashtag extends BaseEntity {
    * @return Hashtag
    */
   public function __construct($text) {
-    $this->_text = $text;
+    $this->setText($text);
     $this->_posts = new ArrayCollection();
   }
 

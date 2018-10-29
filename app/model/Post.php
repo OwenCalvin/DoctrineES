@@ -40,10 +40,10 @@ class Post extends BaseEntity {
    */
   public function __construct($title, $text, $user, $hashtags = []) {
     //parent::__construct();
-    $this->_title = $title;
-    $this->_text = $text;
-    $this->_user = $user;
-    $this->_hashtags = new ArrayCollection($hashtags);
+    $this->setTitle($title);
+    $this->setText($text);
+    $this->setUser($user);
+    $this->setHashtags($hashtags);
   }
 
   public function getTitle() {
@@ -72,5 +72,8 @@ class Post extends BaseEntity {
       $this->_hashtags->toArray(),
       ['text']
     );
+  }
+  public function setHashtags($hashtags) {
+    $this->_hashtags = new ArrayCollection($hashtags);
   }
 }
